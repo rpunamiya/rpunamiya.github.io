@@ -493,6 +493,19 @@ a.hoverline:hover {
   text-align: center;
   vertical-align: middle;
   display: table-cell;
+  overflow: auto;
+}
+
+.scrollable-row {
+  display: flex;
+  overflow-x: auto;
+  white-space: nowrap;
+  padding-bottom: 20px;
+}
+
+.scrollable-row .col {
+  flex: 0 0 auto;
+  display: inline-block;
 }
 
 .card.large .card-content p {
