@@ -201,55 +201,64 @@
   </nav>
 
   <main>
-    <section id="Project 1: Bimanual Gripper" class="section scrollspy">
-      <h3 class="page-title white-text teal">Bimanual Robot Smart Gripper</h3>
+    <section id="Project 3: Nekton" class="section scrollspy">
+      <h3 class="page-title white-text teal">Autonomous Under-Ice Vehicle</h3>
       
       <div class="container">
         <div class="skill-labels">
-          <span class="skill">Robotics</span>
           <span class="skill">Rapid Prototyping</span>
           <span class="skill">3D Printing</span>
-          <span class="skill">Inverse Kinematics</span>
-          <span class="skill">Gelsight Sensor</span>
-          <span class="skill">Python</span>
-          <span class="skill">OpenCV</span>
+          <span class="skill">Machining</span>
+          <span class="skill">Lathe/Mill</span>
+          <span class="skill">Nonholonomic Control</span>
+          <span class="skill">DFMA</span>
+          <span class="skill">FEA</span>
+          <span class="skill">Arduino</span>
+          <span class="skill">Circuits</span>
         </div>
         <p><b>Outcome:</b></p>
         <p>
-          Within the subfield of agile legged locomotion and manipulation, I led a team of undergraduate students in designing/fabricating a 3-degree-of-freedom attachable mechanical gripper for the bipedal Digit robot using Gelsight sensors. This research project was executed within Dr. Ye Zhao's LAB-IDAR group at Georgia Tech.
+          For the next-generation modular and field-portable autonomous under-ice vehicle, my capstone project team designed and fabricated a new thruster module and battery module. We demonstrated the ability of these modules to operate under water, while achieving full orientation control. This design will be deployed underneath Antarctica for scientists to use as a slim, long-range, deep-water, under-ice, robotic oceanographer.
         </p>
-        <div class="row scrollable-row">
-          <img src="../assets/img/lidar1.jpg" alt="Gripper CAD" style="max-height: 400px;">
-          <img src="../assets/img/lidar2.png" alt="Arm" style="max-height: 400px;">
-          <img src="../assets/img/lidar6.png" alt="Digit Robot" style="max-height: 400px;">
-          <img src="../assets/img/lidar3.png" alt="Gelsight" style="max-height: 400px;">
-          <img src="../assets/img/lidar4.jpg" alt="Case" style="max-height: 400px;">
-          <img src="../assets/img/lidar5.jpg" alt="Gelsight Fabrication" style="max-height: 200px;">
+        <div style="text-align: center;">
+          <iframe width="672" height="378" src="https://www.youtube.com/embed/tcDcED7BVEk?si=Oa_xDK4O2VM330uh" title="Nekton Youtube Video" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
         </div>
-
+        <img src="Expo Poster.jpg" style="display: flex; max-width: 100%; text-align: center; padding-top: 20px;">
         <p><b>Motivation:</b></p>
         <p>
-          In the past few decades, the development of tactile sensor technology has become the forefront of robotic research that aims to imitate human fingertip sensation. Those tasks, however, are still challenging for robots, as standard force sensors do not obtain enough tactile information at a high enough resolution for them to deduce object shape and mechanical properties. One big development has been a visuotactile sensor called Gelsight, which uses a deformable elastomer contact surface and an embedded camera to capture contact deformations and infer local force/shear. This helps the robot determine the grasped object's physical properties.
+          The Nekton Vehicle is a sub-ice vehicle which will be used to explore the icy environments in the polar regions of the Earth. A successor to Icefin, the first of its kind under-ice vehicle developed by a team of scientists and engineers from Georgia Tech and other institutes, Nekton will also follow a modular design. The main motive for building an autonomous under-ice vehicle is for scientists to explore the environment in sub-ice polar regions, gain insight into how the ocean and seafloor interact, and the effects of climate change on the structure and chemistry of glaciers and ice shelves. This project has the ultimate goal of being deployed on Jupiter's moon Europa, which scientists postulate have a thriving ocean environment under the ice. 
         </p>
         <p>
-          The focus of my research was to determine the effectiveness of GelSight sensors within the context of common dynamic locomotion tasks (throwing/catching common objects such as balls, moving carts, performing warehouse tasks). This built on prior research into the mechanical design of GelSight grippers, and their ability to firmly grip objects with a variety of mechanical properties with minimal slip. The aim was to create an optimal mechanical design that maximized sensor resolution and reduced object perception error when detecting common objects in dynamic motion with a bipedal robot. 
+          To progress towards that goal, the Nekton vehicle will significantly improve over the Icefin predecessor. A major upgrade is making the vehicle autonomous and free to move in the water without controlling it manually. Another major change is the decreased diameter of the Nekton to make it much more slim and field-portable. While the structure of the vehicle might resemble Icefin, Nekton requires new modules for the thrusters, batteries, electronics and controls.
+        </p>
+        <p>
+          Our capstone group aimed to design and machine the thruster modules that house T-200 Blue Robotics thrusters, design the battery module that powers the entire vehicle, and develop a robust model for the dynamics of the vehicle to be used for designing an orientation controller for the vehicle's 5DoF non-holonomic motion. 
         </p>
         <p><b>Results:</b></p>
         <p>
-          From the team I led, I designed a gear-based gripper mechanism that reduced the complexity and number of components of the previous cable-driven mechanism. I also developed an inverse kinematics model to pair with our gain-scheduled controller to ensure the gripper was able to grip objects appropriately. This was all with the ultimate aim to get a better grip and reading on the Gelsight tactile sensors, in which readings were improved by 28%. Through the Research Option at Georgia Tech, I have communicated these ideas in a technical thesis format. From this entire process, I learned a lot about how a formal research study is structured and executed, along with the important communication techniques used to convey findings. This experience ultimately encouraged me to pursue a career in robotics.
+          Using my knowledge of mechatronic systems, I designed an automated test that measured the dimensionless coefficient of flow, as the valve spindle moved through different positions (causing different knee resistances). A functional valve and malfunctional valve would produce different curves of flow coefficients vs spindle positions.  Furthermore, instead of finely measuring the valve position at each small increment, I sparsely sampled positions and applied a spline curve to best fit the data. Overall, I reduced the testing time from 45 minutes of manual testing time to 80 seconds of automated testing with densely populated points, to 20 seconds of automated testing with sparsely populated points. This test is used by the team today to efficiently evaluate potential defects in over ½ million valves a year.
+        </p>
+        <p>
+          When designing the controller, I performed system ID and formed an analytic math model of the valve system. Being a non-linear system (with the smallest degree being power of 4), we linearized at the aforementioned sparsely sampled points, and tuned the PID controller at those points to create an optimal gain-scheduled controller.
         </p>
         <p><b>Technical Details:</b></p>
         <ul style="list-style-type: disc;">
-          <li style="list-style-type: disc; margin-left: 20px; margin-bottom: 10px;">Our team found that a 3D-printed gripper with one motor and a geared connection between both gripper fingers was the most robust design that adhered to those constraints best. The chosen motor was a Dynamixel XM-430-W350-T motor due to its high-performance control.</li>
-          <li style="list-style-type: disc; margin-left: 20px; margin-bottom: 10px;">The Lucas-Kanade method provided by the gsrobotics library was utilized to track gel marker positions using the Raspberry Pi mini camera. This optical flow method estimates the displacement of markers on the Gelsight sensor by examining the changes in pixel intensity from the known intensity gradients of the image in that neighborhood. The displacement of markers was directly correlated with the force applied to the sensor by applying a best fit curve to a neo-Hookean curve.</li>
-          <li style="list-style-type: disc; margin-left: 20px; margin-bottom: 10px;">The gripper's weight being 326g implied it met the specification of being less than 1kg by a factor of safety of 2.32. Furthermore, after approximately 200 gripper attempts, there were no visible signs of stress or fatigue on any component of the system. In comparison, with the cable-driven mechanism, on average there was at least one gripping failure occurring every 12 gripper cycles, often from the cable getting stuck in grooves in the gripper.</li>
-          <li style="list-style-type: disc; margin-left: 20px; margin-bottom: 10px;">To test the robustness of the gripping mechanism against slip, a gradually increasing mass of solid non-deformable block was used, with the shear forces and shear displacements (based on average marker displacement) measured. </li>
-        </ul> 
-        
-        <p><b>Undergraduate Thesis:</b></p>
+          <li style="list-style-type: disc; margin-left: 20px; margin-bottom: 10px;">The designed automated test involved measuring the coefficient of flow as the valve spindle moved through different positions using an ALICAT sensor. The coefficient of flow equation is:</li>
+          <li style="text-align: center; margin-bottom: 10px;">
+            <img src="../assets/img/flow-coefficient-formula.png" style="display: flex; max-height: 200px;">
+          </li>
+          <li style="list-style-type: disc; margin-left: 20px; margin-bottom: 10px;">During the test, the controller would attempt to move the spindle to a desired position. Air at a fixed flow rate would burst through the valve at that point, and the ALICAT flow meter would measure the pressure into and out of the valve. The computer would record these pressures and calculate the flow coefficient value. This value would be recorded, alongside the actual position of the spindle (measured with the internal hall-effect sensor).</li>
+          <li style="list-style-type: disc; margin-left: 20px; margin-bottom: 10px;">Instead of finely measuring the valve position at each small increment, I sparsely sampled positions and applied a spline curve to best fit the data. This reduced the testing time from 80s to 20s, by looking at fewer points.</li>
+          <li style="list-style-type: disc; margin-left: 20px; margin-bottom: 10px;">By performing system ID, I developed analytic math model of the valve. The valve was actuated by a coil actuator which manipulated the magnetic field in the valve, causing the spindle to move. To model these complex magnetic field interactions, the open-source FEMM software was utilized. </li>
+          <li style="list-style-type: disc; margin-left: 20px; margin-bottom: 10px;">Being a non-linear system (with the smallest degree being power of 4), we linearized at the sparsely sampled points, and found the desired gains using the analytic model. </li>
+          <li style="list-style-type: disc; margin-left: 20px; margin-bottom: 10px;">The desired gains were fine-tuned for the final gain-scheduled controller, which improved steady-state response by 20% and transient response by 31% overall.</li>
+        </ul>
 
-        <object class="pdf" data="Undergrad Thesis.pdf" type="application/pdf" width="100%" height="600px">
+        <p><b>Project Report:</b></p>
+        
+        <object class="pdf" data="Spring 2024 IceBreakers Final Report.pdf" type="application/pdf" width="100%" height="600px">
           <p>It appears you don't have a PDF plugin for this browser. You can <a href="../assets/Undergrad Thesis.pdf">click here to download the PDF file.</a></p>
+        </object>
       </div>
     </section>
   </main>
