@@ -201,51 +201,38 @@
   </nav>
 
   <main>
-    <section id="Project 3: Nekton" class="section scrollspy">
-      <h3 class="page-title white-text teal">Autonomous Under-Ice Vehicle</h3>
+    <section id="Project 6: Mechatronics" class="section scrollspy">
+      <h3 class="page-title white-text teal">Cardiac Catheterization Lab Radiation Shielding Redesign</h3>
       
       <div class="container">
         <div class="skill-labels">
-          <span class="skill">Rapid Prototyping</span>
-          <span class="skill">3D Printing</span>
-          <span class="skill">Machining</span>
-          <span class="skill">Lathe/Mill</span>
-          <span class="skill">Nonholonomic Control</span>
+          <span class="skill">Material Design</span>
+          <span class="skill">CAD</span>
           <span class="skill">DFMA</span>
-          <span class="skill">FEA</span>
-          <span class="skill">Arduino</span>
-          <span class="skill">Circuits</span>
         </div>
         <p><b>Outcome:</b></p>
         <p>
-          For the next-generation modular and field-portable autonomous under-ice vehicle, my capstone project team designed and fabricated a new thruster module and battery module. We demonstrated the ability of these modules to operate under water, while achieving full orientation control. This design will be deployed underneath Antarctica for scientists to use as a slim, long-range, deep-water, under-ice, robotic oceanographer.
-        </p>
-        <div style="text-align: center;">
-          <iframe width="672" height="378" src="https://www.youtube.com/embed/tcDcED7BVEk?si=Oa_xDK4O2VM330uh" title="Nekton Youtube Video" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+          Designed and proposed a more efficient, convenient, and cost-effective radiation shield for use in a cardiac catheterization lab. I proposed a novel alternative material that prevents almost 100% of high energy ionizing radiation, compared to the current industry standard 60%. The sintering process in powder metallurgy is deemed the most efficient manufacturing method, in terms of quality and cost. With the team of two researchers and two doctors at Grady Hospital in Atlanta, a more convenient portable floor shield was also designed.        <div class="row scrollable-row">
+          <img src="../assets/img/shield1.png" style="max-height: 400px;">
+          <img src="../assets/img/shield2.png" style="max-height: 400px;">
+          <img src="../assets/img/shield3.png" style="max-height: 400px;">
         </div>
-        <img src="Expo Poster.jpg" style="display: flex; max-width: 100%; text-align: center; padding-top: 20px;">
+
         <p><b>Motivation:</b></p>
         <p>
-          The Nekton Vehicle is a sub-ice vehicle which will be used to explore the icy environments in the polar regions of the Earth. A successor to Icefin, the first of its kind under-ice vehicle developed by a team of scientists and engineers from Georgia Tech and other institutes, Nekton will also follow a modular design. The main motive for building an autonomous under-ice vehicle is for scientists to explore the environment in sub-ice polar regions, gain insight into how the ocean and seafloor interact, and the effects of climate change on the structure and chemistry of glaciers and ice shelves. This project has the ultimate goal of being deployed on Jupiter's moon Europa, which scientists postulate have a thriving ocean environment under the ice. 
+          The most common ionizing radiation used in a cath-lab occurs in the X-ray field, typically with wavelengths in the range of 0.01 nm up to 10 nm. This corresponds to a photon energy range of 100 keV down to 100 eV. The well-documented dangers of such X-ray ionizing radiation arise from the radiation having enough energy to potentially damage DNA. These can lead to many health risks to exposed operators, including a small increase in likelihood of developing cancer in later life, and tissue effects (occurring at relatively high levels of radiation exposure) such as cataracts, skin reddening, and hair loss.
         </p>
         <p>
-          To progress towards that goal, the Nekton vehicle will significantly improve over the Icefin predecessor. A major upgrade is making the vehicle autonomous and free to move in the water without controlling it manually. Another major change is the decreased diameter of the Nekton to make it much more slim and field-portable. While the structure of the vehicle might resemble Icefin, Nekton requires new modules for the thrusters, batteries, electronics and controls.
-        </p>
-        <p>
-          Our capstone group aimed to design and machine the thruster modules that house T-200 Blue Robotics thrusters, design the battery module that powers the entire vehicle, and develop a robust model for the dynamics of the vehicle to be used for designing an orientation controller for the vehicle's 5DoF non-holonomic motion. 
+          Radiation exposure in fluoroscopy equipment like C-arms comes from two main sources- “scatter” radiation that bounces off the patient's body and “leakage” radiation from the X-ray tube. Of the two sources of exposure, scatter radiation varies considerably more and is the higher contributor to overall exposure. With scatter radiation bouncing off the bed and patient, the most important body parts of the operator that need to be protected are the torso and head. The state-of-the-art shield used at Grady Hospital was quite small, inflexible and difficult to maneuver during procedures. Moreover, the leaded acrylic material was highly toxic and exhibited a blind absorption zone which allowed transmittance of high-energy radiation to operators.
         </p>
         <p><b>Results:</b></p>
         <p>
-          As part of the thruster module team, I led the effort into redesigning and fabricating the life-size modules. My team adapted the current prototype (designed for 3D printing and testing), to the life-size version which would eventually be deployed under-ice. To effectively adapt this, I learned to compliment my intuition in machine design with FEA and CFD analysis to design these thruster modules with a significantly high safety factor, ensuring it would not break in the extreme under-ice environment. The nose and tail cones were assembled with the thruster modules to test the thrusters’ ability to change speed and direction. My team and I connected each thruster to an Arduino Teensy board which could send varying PWM signals, all of which was controlled by the Nvidia Orin microprocessor (using MicroROS). This MPU was connected to an Xbox controller to allow for manual control during our project demonstration. This process gave me further exposure to real-world mechatronics problems.
-        </p>
-        <p>
-          For adequate orientation control of the vehicle, I was responsible for acquiring an accurate model of the vehicle's system dynamics. This involved taking a crash course in the hydrodynamics of submersibles, using Dr. Thor Fossen's Handbook of Marine Craft Hydrodynamics, wherein I learned of the many added factors (such as added mass, and a complex damping matrix) that affect the kinetics of these vehicles. Using several approximations involving the range of speeds at which the vehicle would travel at, and empirical estimates of hydrodynamic derivatives that dictate the drag matrix, I developed a comprehensive model that could be used for robust orientation control. While this mathematical approach was significantly outside the scope of any system dynamics classes I had taken, I was able to quickly adapt and learn the subtle differences in modelling the dynamics of underwater submersibles.
-        </p>
-
+          Our client simply wanted us to choose a shield shape that maximized reflected radiation. However, I decided to change the foundation of the design completely by recommending a new radiation-absorbent metal alloy. To determine its effectiveness, I conversed with my professor and clients on a weekly basis, updating them on multiple papers I had read on the new material. I also carried out various simulations to predict its structural integrity and optical transparency. After months of meticulous research, we found that the final alloy reduced exposure by up to 40%, and our tests showed it had all the optical properties necessary to act as a transparent floor shield. From this experience, I learned the importance of challenging norms in order to create the best possible product, along with effectively communicating with a team to do so.
+        </p>        
         <p><b>Project Report:</b></p>
-        
-        <object class="pdf" data="Spring 2024 IceBreakers Final Report.pdf" type="application/pdf" width="100%" height="600px">
-          <p>It appears you don't have a PDF plugin for this browser. You can <a href="Spring 2024 IceBreakers Final Report.pdf">click here to download the PDF file.</a></p>
+
+        <object class="pdf" data="Shield Final Report.pdf" type="application/pdf" width="100%" height="600px" style="margin-bottom: 30px;">
+          <p>It appears you don't have a PDF plugin for this browser. You can <a href="Shield Final Report.pdf">click here to download the PDF file.</a></p>
         </object>
       </div>
     </section>
