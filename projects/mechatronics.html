@@ -202,37 +202,42 @@
 
   <main>
     <section id="Project 6: Mechatronics" class="section scrollspy">
-      <h3 class="page-title white-text teal">Cardiac Catheterization Lab Radiation Shielding Redesign</h3>
+      <h3 class="page-title white-text teal">Mechatronics Project: Hand-Controlled RC Car</h3>
       
       <div class="container">
         <div class="skill-labels">
-          <span class="skill">Material Design</span>
-          <span class="skill">CAD</span>
-          <span class="skill">DFMA</span>
+          <span class="skill">Mechatronics</span>
+          <span class="skill">Controls</span>
+          <span class="skill">Microcontroller</span>
+          <span class="skill">C/C#</span>
+          <span class="skill">Arduino</span>
+          <span class="skill">Sensor Design</span>
+          <span class="skill">Circuits</span>
         </div>
+        <div>
         <p><b>Outcome:</b></p>
         <p>
-          Designed and proposed a more efficient, convenient, and cost-effective radiation shield for use in a cardiac catheterization lab. I proposed a novel alternative material that prevents almost 100% of high energy ionizing radiation, compared to the current industry standard 60%. The sintering process in powder metallurgy is deemed the most efficient manufacturing method, in terms of quality and cost. With the team of two researchers and two doctors at Grady Hospital in Atlanta, a more convenient portable floor shield was also designed.        <div class="row scrollable-row">
-          <img src="../assets/img/shield1.png" style="max-height: 400px;">
-          <img src="../assets/img/shield2.png" style="max-height: 400px;">
-          <img src="../assets/img/shield3.png" style="max-height: 400px;">
+          Designed and built the entire electromechanical system to control the speed of a RC car with the orientation of a user's hand. My teammate and I utilized the TI MSP432 microcontroller, an IMU, motor encoders, and control theory to enable real-time coordination of DC motors with hand orientation.
         </div>
 
         <p><b>Motivation:</b></p>
         <p>
-          The most common ionizing radiation used in a cath-lab occurs in the X-ray field, typically with wavelengths in the range of 0.01 nm up to 10 nm. This corresponds to a photon energy range of 100 keV down to 100 eV. The well-documented dangers of such X-ray ionizing radiation arise from the radiation having enough energy to potentially damage DNA. These can lead to many health risks to exposed operators, including a small increase in likelihood of developing cancer in later life, and tissue effects (occurring at relatively high levels of radiation exposure) such as cataracts, skin reddening, and hair loss.
+          One particularly difficult task for elderly persons is the transport of different objects across a room. My teammate and I envisioned a product which the elderly could easily control with the orientation of their hands, removing any obstacles that can occur when getting up, walking to an object, and transporting it with themselves to another part of the same room. The first step to achieving a remotely controlled product that can robustly complete the above task is to design a hand-controlled movable table which can transport object across a room, similar to a RC car. 
         </p>
         <p>
-          Radiation exposure in fluoroscopy equipment like C-arms comes from two main sources- “scatter” radiation that bounces off the patient's body and “leakage” radiation from the X-ray tube. Of the two sources of exposure, scatter radiation varies considerably more and is the higher contributor to overall exposure. With scatter radiation bouncing off the bed and patient, the most important body parts of the operator that need to be protected are the torso and head. The state-of-the-art shield used at Grady Hospital was quite small, inflexible and difficult to maneuver during procedures. Moreover, the leaded acrylic material was highly toxic and exhibited a blind absorption zone which allowed transmittance of high-energy radiation to operators.
+          To align with the course learning outcomes, we aimed to incorporate the TI MSP432 microcontroller with feedback from an IMU and motor encoders to enable real-time coordination of the “RC car” wheels. We aimed to create a robust mechanical framework with balanced mass properties, designed to maintain stability and structural integrity.
         </p>
         <p><b>Results:</b></p>
         <p>
-          Our client simply wanted us to choose a shield shape that maximized reflected radiation. However, I decided to change the foundation of the design completely by recommending a new radiation-absorbent metal alloy. To determine its effectiveness, I conversed with my professor and clients on a weekly basis, updating them on multiple papers I had read on the new material. I also carried out various simulations to predict its structural integrity and optical transparency. After months of meticulous research, we found that the final alloy reduced exposure by up to 40%, and our tests showed it had all the optical properties necessary to act as a transparent floor shield. From this experience, I learned the importance of challenging norms in order to create the best possible product, along with effectively communicating with a team to do so.
-        </p>        
-        <p><b>Project Report:</b></p>
+          Due to time constraints, we aimed to build functionality for the car to move forwards and backwards at different speeds. We initially designed and modelled the kinematics of the mechanical system, which consisted of an acrylic table attached to four Mecanum wheels (chosen for their ability to translate the car). We chose suitable DC motors and encoders to achieve the desired forward and backward speeds of the car. The full design of the electrical system was then created, with the integration of the MSP432 microcontroller and gyroscope components. Lastly, a closed-loop control system for each Mecanum wheel was established, incorporating encoders and IMUs to achieve precise control over speed while enduring perturbations. The entire system was tested and deemed successful: it was responsive within 100ms, and followed the intended path (with maximum offset of 0.05m for every 1m travelled).
+        </p>
+        <p>
+          Despite the simple functionality that we aimed to achieve, the integration of all mechanical and electrical components was very time-consuming. There were many struggles we faced, from the timer on the microcontroller to the filtering of gyroscope raw readings. However, from this experience, I was able to gain a very deep understanding and appreciation for the way each component of an electromechanical system can work together with other ones to execute an overall function in the real world. 
+        </p>
+        <p><b>Project Details:</b></p>
 
-        <object class="pdf" data="Shield Final Report.pdf" type="application/pdf" width="100%" height="600px" style="margin-bottom: 30px;">
-          <p>It appears you don't have a PDF plugin for this browser. You can <a href="Shield Final Report.pdf">click here to download the PDF file.</a></p>
+        <object class="pdf" data="Mechatronics Final Project Presentation.pdf" type="application/pdf" width="100%" height="600px" style="margin-bottom: 30px;">
+          <p>It appears you don't have a PDF plugin for this browser. You can <a href="Mechatronics Final Project Presentation.pdf">click here to download the PDF file.</a></p>
         </object>
       </div>
     </section>
