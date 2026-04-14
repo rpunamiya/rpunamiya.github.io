@@ -730,6 +730,12 @@ section[id^="Project"] .container img {
   margin-right: auto;
 }
 
+.investiture-results-image {
+  max-width: 85% !important;
+  width: auto !important;
+  height: auto !important;
+}
+
 /* Container for skill labels */
 .skill-labels {
   display: flex;
