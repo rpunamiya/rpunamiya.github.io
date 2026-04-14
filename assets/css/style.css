@@ -657,7 +657,7 @@ small {
     top: 64px;
   }
   section#intro {
-    margin-bottom: -64px;
+    margin-bottom: 0;
   }
   .card .role {
     position: relative;
@@ -704,6 +704,30 @@ small {
   #intro.section {
     background-position-x: 30%;
   }
+  #intro.full-height {
+    height: auto;
+    min-height: 100vh;
+  }
+  #intro .content.section-padding {
+    margin-left: 0 !important;
+    margin-top: 12px !important;
+    padding: 8px 0 !important;
+  }
+  #intro .caption h5 {
+    font-size: 1rem;
+    line-height: 1.35;
+  }
+  #intro .intro-long {
+    display: none;
+  }
+}
+
+section[id^="Project"] .container img {
+  max-width: 100% !important;
+  height: auto !important;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 /* Container for skill labels */
